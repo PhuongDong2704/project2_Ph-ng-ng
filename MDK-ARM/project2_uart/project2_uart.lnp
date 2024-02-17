@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"project2_uart\startup_stm32f103xb.o"
+"project2_uart\main.o"
+"project2_uart\stm32f1xx_it.o"
+"project2_uart\stm32f1xx_hal_msp.o"
+"project2_uart\stm32f1xx_hal_gpio_ex.o"
+"project2_uart\stm32f1xx_hal_tim.o"
+"project2_uart\stm32f1xx_hal_tim_ex.o"
+"project2_uart\stm32f1xx_hal_uart.o"
+"project2_uart\stm32f1xx_hal.o"
+"project2_uart\stm32f1xx_hal_rcc.o"
+"project2_uart\stm32f1xx_hal_rcc_ex.o"
+"project2_uart\stm32f1xx_hal_gpio.o"
+"project2_uart\stm32f1xx_hal_dma.o"
+"project2_uart\stm32f1xx_hal_cortex.o"
+"project2_uart\stm32f1xx_hal_pwr.o"
+"project2_uart\stm32f1xx_hal_flash.o"
+"project2_uart\stm32f1xx_hal_flash_ex.o"
+"project2_uart\stm32f1xx_hal_exti.o"
+"project2_uart\system_stm32f1xx.o"
+"project2_uart\button.o"
+--strict --scatter "project2_uart\project2_uart.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "project2_uart.map" -o project2_uart\project2_uart.axf
